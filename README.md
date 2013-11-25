@@ -8,6 +8,42 @@ HTML.
   [1]: http://mathb.in/
 
 
+Features
+--------
+The following features are supported by this application.
+
+  1. Input can be provided as a free mix of LaTeX, Markdown and HTML
+     code
+  2. Math is rendered with HTML and CSS on browsers that have JavaScript
+     enabled
+  3. Math is rendered as PNG image on browsers that have JavaScript
+     disabled
+  4. Live preview if JavaScript is enabled
+  5. Static preview if JavaScript is disabled
+  6. Secret posts with secret URLs
+
+To try out these features, visit <http://mathb.in>, a pastebin for math
+powered by this project.
+
+System setup
+------------
+This application depends on a few Linux tools to display static preview
+for users who have JavaScript disabled in their browser. The static
+preview is provided by converting the input code to a PNG with the help
+of pandoc and convert commands, and displaying this PNG to the browser.
+The following packages need to be installed:
+
+  1. pandoc
+  2. texlive,
+  3. texlive-latex-extra
+  4. imagemagick.
+
+On Debian, or a Debian based Linux system, these packages can be
+installed by running the following command:
+
+    aptitude install pandoc texlive texlive-latex-extra imagemagick
+
+
 Source code setup
 -----------------
 MathB depends on third-party JavaScript libraries to convert users's
