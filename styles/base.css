@@ -8,6 +8,11 @@ body {
     color: #333333;
 }
 
+textarea {
+   font-family: inherit;
+   font-size: inherit;
+}
+
 a:link, a:visited {
     color: #0000e0;
     text-decoration: none;
